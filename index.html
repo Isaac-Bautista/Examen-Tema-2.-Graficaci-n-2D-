@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burbujas Frenéticas</title>
+    <link rel="icon" href="Logo.jpg" type="image/jpeg"> <!-- Añadir el logo como favicon -->
+    <style>
+        body {
+            background-color: rgb(226, 226, 74);
+            margin: 0;
+            position: relative;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+            cursor: url('Cursor.jpg'), auto;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #logo {
+            width: 50px; /* Ajusta el tamaño del logo aquí */
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        #descripcion {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 18px;
+            text-align: left;
+            color: rgb(17, 16, 16);
+        }
+
+        #credito {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 18px;
+            text-align: right;
+            color: rgb(15, 14, 14);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="Logo.jpg" alt="Logo del Juego">
+        <h1>Burbujas Frenéticas</h1>
+    </div>
+    <p id="descripcion">¡Bienvenido a Burbujas Frenéticas! Tu misión es simple: ¡Explotar todas las burbujas antes de que alcancen la parte superior de la pantalla! ¡Explótalas todas para avanzar de nivel y acumular puntos! ¡Que te diviertas!</p>
+    <p id="credito">Creado por Isaac Bautista</p>
+    
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="js/main.js"></script>
+</body>
+</html>
